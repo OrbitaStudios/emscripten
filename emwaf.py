@@ -12,12 +12,12 @@ the environment variables to use emcc and so forth. Usage:
 Note that if you ran configure with emconfigure, then
 the environment variables have already been detected
 and set. This script is useful if you have no configure
-step, and your Makefile uses the environment vars
+step, and your wscript uses the environment vars
 directly.
 
 The difference between this and emconfigure is that
 emconfigure runs compilation into native code, so
-that configure tests pass. emmake uses Emscripten to
+that configure tests pass. emwaf uses Emscripten to
 generate JavaScript.
 """
 
