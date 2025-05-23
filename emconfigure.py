@@ -43,6 +43,10 @@ variables so that emcc etc. are used. Typical usage:
     print('error: use `emcmake` rather then `emconfigure` for cmake projects', file=sys.stderr)
     return 1
 
+  if 'waf' in args:
+    print('error: use `emwaf` rather then `emconfigure` for Waf projects', file=sys.stderr)
+    return 1
+
   env = building.get_building_env()
   # When we configure via a ./configure script, don't do config-time
   # compilation with emcc, but instead do builds natively with Clang. This
